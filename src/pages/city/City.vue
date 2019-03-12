@@ -33,7 +33,8 @@ export default {
     methods:{
         getCityinfo(){
             let that = this
-            axios.get(Api.api+'city.json').then(function(res){
+            // Api.api+'city.json'
+            axios.get('https://www.wuliaojj.top/wherego/dist/static/mock/city.json').then(function(res){
                 that.cities = res.data.data.cities
                 that.hotCities = res.data.data.hotCities
             })  

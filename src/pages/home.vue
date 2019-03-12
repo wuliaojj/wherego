@@ -48,7 +48,7 @@ export default {
         getInfo(){
             let that=this
             // Api.api+
-            axios.get('/static/mock/index.json').then(function(res){
+            axios.get('https://www.wuliaojj.top/wherego/dist/static/mock/index.json').then(function(res){
                 // console.log(res);
                 if(res.data.data && res.data.ret){
                     that.swiperList = res.data.data.swiperList
